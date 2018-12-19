@@ -1,0 +1,49 @@
+.drawer {
+  background: #ffffff;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  max-width: 300px;
+  position: fixed;
+
+
+
+  padding: 1rem 2rem;
+  top: 0;
+  transform: translateX(0);
+  transition: transform .22s ease-in-out;
+  width: 80%;
+  z-index: 90;
+
+  &.closed {
+    transform: translateX(-300px);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: .5rem 0;
+
+      a {
+        color: #363f54;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        text-decoration: none;
+        transition: opacity .3s ease-in;
+
+        &:hover,
+        &.active {
+          opacity: .7;
+        }
+      }
+
+      & + & {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

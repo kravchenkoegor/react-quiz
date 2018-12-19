@@ -1,0 +1,41 @@
+.quizList {
+  background: linear-gradient(90deg, #fd8355 0%, #f0576c 37%, #f79cbd 100%);
+  color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+
+  &__wrapper {
+    width: 600px;
+
+    h1 {
+      margin-bottom: 2.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      & + li {
+        margin-top: 1rem;
+      }
+
+      a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+          color: rgba(#363f54, .7);
+        }
+      }
+    }
+  }
+}
