@@ -4,11 +4,13 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 60px;
   width: 100%;
 
   &__wrapper {
-    width: 600px;
+    max-width: 560px;
+    padding: 20px;
+    width: 100%;
 
     h1 {
       margin-bottom: 2.5rem;
@@ -36,6 +38,14 @@
           color: rgba(#363f54, .7);
         }
       }
+    }
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 100px;
+
+    &__wrapper {
+      padding: 0;
     }
   }
 }

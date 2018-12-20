@@ -2,9 +2,9 @@
   color: #ffffff;
   cursor: pointer;
   font-size: 28px;
-  left: 40px;
-  position: fixed;
-  top: 40px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
   transition: opacity, left .22s ease-in-out;
   z-index: 99;
 
@@ -14,5 +14,11 @@
 
   &.open {
     left: 320px;
+  }
+
+  @media (min-width: 960px) {
+    left: 40px;
+    position: fixed;
+    top: 40px;
   }
 }

@@ -1,11 +1,15 @@
 .layout {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 
   main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+  }
+
+  @media (min-width: 960px) {
+
   }
 }

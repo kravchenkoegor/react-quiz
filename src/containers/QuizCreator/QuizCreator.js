@@ -142,21 +142,23 @@ class QuizCreator extends Component {
               ]}
             />
 
-            <Button
-              type={'success'}
-              onClick={this.addQuestionHandler}
-              disabled={!this.state.isFormValid}
-            >
-              Добавить вопрос
-            </Button>
+            <div className={'quizCreator__buttons'}>
+              <Button
+                type={'success'}
+                onClick={this.addQuestionHandler}
+                disabled={!this.state.isFormValid}
+              >
+                Добавить вопрос
+              </Button>
 
-            <Button
-              type={'secondary'}
-              onClick={this.createQuizHandler}
-              disabled={!this.props.quiz.length}
-            >
-              Создать тест
-            </Button>
+              <Button
+                type={'secondary'}
+                onClick={this.createQuizHandler}
+                disabled={!this.props.quiz.length}
+              >
+                Создать тест
+              </Button>
+            </div>
           </form>
         </div>
 

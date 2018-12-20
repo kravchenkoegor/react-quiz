@@ -23,4 +23,25 @@
       }
     }
   }
+
+  &__buttons {
+    text-align: center;
+
+    .button {
+      &.primary {
+        margin: 16px 0;
+      }
+
+    }
+
+    @media (min-width: 600px) {
+      text-align: left;
+
+      .button {
+        &.primary {
+          margin: 0 16px 0 0;
+        }
+      }
+    }
+  }
 }
